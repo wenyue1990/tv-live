@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  tv-live:
+    build: .
+    container_name: fnos-tv-live
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./config:/config
+      - ./playlist:/playlist
+    environment:
+      - TZ=Asia/Shanghai
+    networks:
+      - fnos-network
+
+networks:
+  fnos-network:
+    external: true
+    name: fnos-network
