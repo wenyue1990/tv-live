@@ -28,5 +28,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            ${{ secrets.WENYUE199808 }}}/tv-live:latest
-            ${{ secrets.WENYUE199808 }}/tv-live:${{ github.sha }}
+            ${{ secrets.DOCKERHUB_USERNAME }}/tv-live:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/tv-live:${{ github.sha }}
