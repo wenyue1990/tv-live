@@ -3,7 +3,7 @@ version: '3.8'
 services:
   tv-live:
     build: .
-    container_name: fnos-tv-live
+    container_name: tv-live
     restart: unless-stopped
     ports:
       - "8080:8080"
