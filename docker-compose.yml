@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   tv-live:
     build: .
@@ -12,10 +10,3 @@ services:
       - ./playlist:/playlist
     environment:
       - TZ=Asia/Shanghai
-    networks:
-      - fnos-network
-
-networks:
-  fnos-network:
-    external: true
-    name: fnos-network
