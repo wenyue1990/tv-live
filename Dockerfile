@@ -1,7 +1,7 @@
 # 飞牛电视直播 Dockerfile
 # 适用于fnOS (飞牛NAS)
 
-FROM python:3.11-slim
+FROM python:3.13
 
 # 设置工作目录
 WORKDIR /app
